@@ -10,15 +10,17 @@ else
     echo "File does not Exists!!"
 fi
 
-#Create parameters file.
+#Create a parameters file.
 touch $FILE
 
 #Set parameters
 if [ "$Action" == "Upgrade" ]
 then
 	echo "action: present" > $FILE
-	echo "package: java-1.8.0-openjdk.x86_64" >> $FILE
+	echo "package: java-1.8.0-openjdk.x86_64" >> $FILE 
 else
 	echo "action: absent" > $FILE
 	echo "package: java*" >> $FILE
 fi
+
+echo "environment: $Environment" >> $FILE
