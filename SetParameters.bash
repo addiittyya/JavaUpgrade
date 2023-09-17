@@ -1,5 +1,5 @@
 #!/bin/bash
-FILE="/etc/ansible/variable/javavar.txt"
+FILE="./javavar.txt"
 
 #Check if file exists and remove if it does.
 if [ -e $FILE ]
