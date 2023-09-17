@@ -3,7 +3,7 @@
   hosts: web
   remote_user: root
   vars_files:
-  - /etc/ansible/variable/javavar.txt
+  - ./javavar.txt
 
   tasks:
   - name: Java Upgrade
