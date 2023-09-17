@@ -1,0 +1,11 @@
+[DEV]
+172.31.32.220 ansible_user=ec2-user
+
+[TEST]
+1.1.1.1 ansible_user=ec2-user
+
+[UAT]
+1.2.3.4 ansible_user=ec2-user
+
+[PROD]
+1.0.1.0 ansible_user=ec2-user
