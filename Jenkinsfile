@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Execute Playbook') {
             steps {
-                ansiblePlaybook become: true, credentialsId: 'private-key', installation: 'Ansible', inventory: 'Inventory.txt', playbook: 'Playbook.yml'
+                ansiblePlaybook become: true, credentialsId: 'Ansible', installation: 'Ansible', inventory: 'Inventory.txt', playbook: 'Playbook.yml'
             }
         }
     }
