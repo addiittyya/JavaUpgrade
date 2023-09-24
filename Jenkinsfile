@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'd7e5d8a7-c547-41c9-867d-5a091092549d', url: 'https://github.com/addiittyya/JavaUpgrade.git'
+                git branch: 'main', credentialsId: 'GitAccount', url: 'https://github.com/addiittyya/JavaUpgrade.git'
             }
         }
         stage('Parameters file') {
