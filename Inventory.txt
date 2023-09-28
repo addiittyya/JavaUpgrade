@@ -2,7 +2,7 @@
 172.31.32.220 ansible_user=ec2-user
 
 [TEST]
-172.31.13.195 ansible_user=ec2-user
+172.31.13.195
 
 [UAT]
 1.2.3.4 ansible_user=ec2-user
