@@ -1,6 +1,7 @@
 ---
 - name: Java upgrade
   hosts: "{{ environment }}"
+  remote_user: root
   vars_files:
   - ./javavar.txt
 
