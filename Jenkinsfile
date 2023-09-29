@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Execute Playbook') {
             steps {
-                ansiblePlaybook become: true, credentialsId: 'SSHLogin', installation: 'Ansible', inventory: 'Inventory.txt', playbook: 'Playbook.yml'
+                ansiblePlaybook become: true, credentialsId: '6cfa7562-7560-455f-99a5-db8c0b262053', installation: 'Ansible', inventory: 'Inventory.txt', playbook: 'Playbook.yml'
             }
         }
     }
