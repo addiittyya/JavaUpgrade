@@ -1,5 +1,5 @@
 [DEV]
-172.31.43.50 ansible_user=ec2-user
+172.31.43.50
 
 [TEST]
 172.31.43.50 ansible_user=ec2-user
