@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'GitAccount', url: 'https://github.com/addiittyya/JavaUpgrade.git'
+                git branch: 'main', credentialsId: 'GithubAccount', url: 'https://github.com/addiittyya/JavaUpgrade.git'
             }
         }
         stage('Parameters file') {
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Execute Playbook') {
             steps {
-                ansiblePlaybook become: true, credentialsId: 'Ansible', installation: 'Ansible', inventory: 'Inventory.txt', playbook: 'Playbook.yml'
+                ansiblePlaybook become: true, credentialsId: 'SSHLogin', installation: 'Ansible', inventory: 'Inventory.txt', playbook: 'Playbook.yml'
             }
         }
     }
